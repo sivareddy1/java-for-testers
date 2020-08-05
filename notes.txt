@@ -1,1 +1,49 @@
 JAVA FUNDAMENTALS:
+Class - (abstract way of representing the objects)Hierarchy header - contains methods to perform certain actions - methods can be accessed using an object of the class.;
+Method - Small piece of code performing certain action - Syntax : <Access modifier> <return type> <Method name>(){} - Ex: public void writeHelloWorldToConsole(){};
+
+Data types:
+Whole numbers: Integer or int (ex:int age = 35), its a 32 bit number (limited size);
+Very big whole number: Long or long (ex:long starsInGalaxy=1000000000L);
+Text Values: String (ex:String name="Test");
+Floating Decimal Numbers: Float or float (ex:float weight=76.53);
+Precise Floating Decimal Numbers: Double or double (ex: double PI = 3.1415926);
+
+final keyword:
+final is a keyword in JAVA, if final is used to declare a variable, it means that the variable value cannot be updated further;
+ex: int age = 32, this can be changed to age = 35 further, however if we declare like final int age = 35, value of age cannot be updated further;
+
+Strings:
+String is not a primitive data types, they are objects and there are lot of default methods that can be used to modify strings;
+ex:legth(), toUpperCase(), replace();
+
+Classes & Objects:
+Classes
+represent abstract concept - ex:Cat or Dog;
+represent attributes - ex:name,favouritefood
+
+Objects are actual things - ex: name=Felix the Cat favouritefood= Tuna , Fido the Dog
+
+Getters & Setters : methods we use in main class to use with object;
+
+THIS key word: this keyword is used for a variable with in a method with in a class with same variable name; ex: this.name = name;
+
+Constructors:
+
+Access Modifier: public, private keywords
+
+Static key word - common variable/method shared across all objects of class, so we do not change/update static variable/method using an object, Change has to be done using class name;
+final keyword: usually we make static variables as constants using final key word
+
+Java Conventions:
+ClassNames : starts with UpperCase and every other word starts with UpperCase, ex: ClassName;
+methodNames: camelCase starts with lowerCase and every other word starts with UpperCase, ex: methodName;
+- Make test methodNames likes this - method_names - for more readability with underscores
+variableNames: camelCase starts with lowerCase and every other word starts with UpperCase, ex: variableName;
+- Static variables have a different purpose than other variables so to stand out STATIC_VARIABLE is convention, ex:STATIC_VARAIABLE;
+Comments:
+line comment - //
+multiple line comment - /* * at the start of each line --- */
+java docs - /** appear in java doc comments
+
+------------ NEED TO CONTINUE FROM CLASSES AND INHERITANCE 3/5 -------------------
