@@ -1,5 +1,6 @@
 package com.serenitydojo;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static com.serenitydojo.Cat.usualFood;
@@ -30,13 +31,26 @@ public class whenCreatingObjects {
 
         Dog rocky = new Dog("Rocky", "Ball", 8);
         System.out.println(rocky.getName());
-        System.out.println(rocky.getfavouriteGame());
+        System.out.println(rocky.getFavouriteGame());
         System.out.println(rocky.getAge());
 
         Dog dolly = new Dog("Dolly",10);
         System.out.println(dolly.getName());
-        System.out.println(dolly.getfavouriteGame());
+        System.out.println(dolly.getFavouriteGame());
         System.out.println(dolly.getAge());
+    }
+
+    @Test
+    public void creating_a_hamster(){
+        Hamster ronny = new Hamster("Ronny");
+        Hamster mickey = new Hamster("Mickey","Running");
+        Hamster lilly = new Hamster("Lilly","Searching",2);
+        System.out.println(ronny.getName());
+        System.out.println(mickey.getName());
+        System.out.println(mickey.getFavouriteGame());
+        System.out.println(lilly.getAge());
+        Assert.assertEquals(ronny.getName(),"Ronny");
+        Assert.assertEquals(lilly.getAge(),2);
     }
 
     @Test
@@ -49,7 +63,8 @@ public class whenCreatingObjects {
         //System.out.println("Usual Food is " + Cat.usualFood());
         //System.out.println(poppy.getName() + "'s Favourite food is " + poppy.usualFood());
         System.out.println("Cat's like " + usualFood());
-        poppy.makeNoise();
+        System.out.println(poppy.makeNoise());
+        System.out.println("Poppy goes " + poppy.makeNoise());
         spotty.makeNoise();
         //poppy.feed("Tuna");
         //spotty.feed("Salmon");
@@ -57,6 +72,48 @@ public class whenCreatingObjects {
 
     }
 
+    @Test
+    public void dog_makes_noise(){
+
+        Dog rocky = new Dog("Rocky","Ball",8);
+        System.out.println(rocky.makeNoise());
+        System.out.println("Rocky goes " + rocky.makeNoise());
+    }
+
+    @Test
+    public void hamster_makes_noise(){
+
+        Hamster ronny = new Hamster("Ronny");
+        System.out.println(ronny.makeNoise());
+        System.out.println("Ronny goes " + ronny.makeNoise());
+    }
+
+    @Test
+    public void pets_make_noises(){
+        PetAnimal poppy = new Cat("Poppy", 3);
+        PetAnimal rocky = new Dog("Rocky", 8);
+        PetAnimal ronny = new Hamster("Ronny",1);
+
+        System.out.println("Poppy goes " + poppy.makeNoise());
+        System.out.println("Rocky goes " + rocky.makeNoise());
+        System.out.println("Ronny Goes " + ronny.makeNoise());
+    }
+
+    @Test
+    public void pets_play(){
+        PetAnimal poppy = new Cat("Poppy", 3);
+        PetAnimal rocky = new Dog("Rocky", 8);
+        PetAnimal ronny = new Hamster("Ronny",1);
+
+        System.out.println("Cat " + poppy.getName() + poppy.play());
+        System.out.println("Dog " + rocky.getName() + rocky.play());
+        System.out.println("Hamster " + ronny.getName() + ronny.play());
+
+        Assert.assertEquals(" plays with string",poppy.play());
+        Assert.assertEquals(" plays with bone",rocky.play());
+        Assert.assertEquals(" runs in wheel",ronny.play());
+
+    }
 
 
 

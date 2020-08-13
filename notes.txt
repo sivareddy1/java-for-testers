@@ -46,4 +46,11 @@ line comment - //
 multiple line comment - /* * at the start of each line --- */
 java docs - /** appear in java doc comments
 
------------- NEED TO CONTINUE FROM CLASSES AND INHERITANCE 3/5 -------------------
+Inheritance:
+child class extends parent;
+
+Polymorphism:
+Overriding
+Abstract
+
+------------ NEED TO CONTINUE FROM  -------------------

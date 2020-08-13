@@ -1,30 +1,38 @@
 package com.serenitydojo;
 
-public class Dog {
-    private String name;
-    private int age;
+public class Dog extends PetAnimal  {
+
+    //private String name;  // declared in PetAnimal class
+    //private int age;
     private String favouriteGame;
+    public static final String DOG_NOISE = "Woof";
 
     public Dog(String name, String favouriteGame, int age) {
-        this.name = name;
-        this.favouriteGame = favouriteGame;
-        this.age = age;
+       super(name,age);
+        //this.name = name;
+       this.favouriteGame = favouriteGame;
+       //this.age = age;
     }
 
     public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
+        super(name,age);
+    //this.name = name;
+    // this.age = age;
     }
 
-    public String getName() {
+   /* public String getName() {
         return name;
-    }
+    }*/
 
-    public String getfavouriteGame() {
-        return favouriteGame;
-    }
+   public String getFavouriteGame(){ return favouriteGame; }
 
-    public int getAge() {
+    /*public int getAge() {
         return age;
-    }
+    }*/
+
+    @Override
+    public String  makeNoise(){ return DOG_NOISE; }
+
+    @Override
+    public String play(){return " plays with bone";}
 }

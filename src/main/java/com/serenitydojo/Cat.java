@@ -1,9 +1,9 @@
 package com.serenitydojo;
 
-public class Cat {
-    private String name;
-    private int age;
-    private String favouriteFood;
+public class Cat extends PetAnimal {
+    //private String name; // declared in PetAnimal class
+    //private int age;
+   private String favouriteFood;
 
    public static final String CAT_NOISE = "Meow";
 
@@ -12,56 +12,47 @@ public class Cat {
    }
 
     public Cat(String name, String favouriteFood, int age) {
-        this.name=name;
-        this.favouriteFood= favouriteFood;
-        this.age= age;
+       super(name,age);
+       //this.name=name;
+       this.favouriteFood= favouriteFood;
+       //this.age= age;
     }
 
     public Cat(String name, int age) {
-        this.name=name;
-        this.age= age;
-        //this.favouriteFood = Cat.usualFood();
-        this.favouriteFood = usualFood();
+       super(name,age);
+       //this.name=name;
+       //this.age= age;
+       this.favouriteFood = Cat.usualFood();
+       this.favouriteFood = usualFood();
     }
 
-    public String getName() {
+   /*public String getName() {
         return name;
-    }
+    }*/
 
-    public String getFavouriteFood() {
-        return favouriteFood;
-    }
+    public String getFavouriteFood() { return favouriteFood; }
 
-    public int getAge() {
+    /*public int getAge() {
         return age;
+    }*/
+
+    public void setFavouriteFood(String favouriteFood) { this.favouriteFood = favouriteFood; }
+
+    @Override
+    public String makeNoise() { return CAT_NOISE;
+        // System.out.println(CAT_NOISE);
     }
 
-    public void setFavouriteFood(String favouriteFood) {
-      this.favouriteFood = favouriteFood;
-    }
+    public void feed(String food) { System.out.println(getName() + " eats some " + food); }
 
-    public void makeNoise() {
-        System.out.println(CAT_NOISE);
-    }
+    public void groom() { lickPaws(); cleanFur(); }
 
-    public void feed(String food) {
-        System.out.println(name + " eats some " + food);
-    }
+    private void cleanFur() { System.out.println(getName() + " Cleans His Fur"); }
 
-    public void groom() {
+    private void lickPaws() { System.out.println(getName() + " Licks His Paws"); }
 
-        lickPaws();
-        cleanFur();
-
-    }
-
-    private void cleanFur() {
-        System.out.println(name + " Cleans His Fur");
-    }
-
-    private void lickPaws() {
-        System.out.println(name + " Licks His Paws");
- }
+    @Override
+    public String play(){return " plays with string";}
 
     //public String setName(String name) {
     //  this.name = name;
