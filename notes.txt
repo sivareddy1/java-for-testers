@@ -53,4 +53,14 @@ Polymorphism:
 Overriding
 Abstract
 
+Simple Conditional logic:
+if(){}else{};
+if(){return}elseif(){return}else{return};
+Nested Conditional logic:
+if(if(){return}else{return}elseif(){return}{return};
+
+Switches & Enums
+Switch: We use this to replace messy if else conditions;
+Enums:
+
 ------------ NEED TO CONTINUE FROM  -------------------
