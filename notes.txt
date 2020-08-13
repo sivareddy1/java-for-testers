@@ -61,6 +61,6 @@ if(if(){return}else{return}elseif(){return}{return};
 
 Switches & Enums
 Switch: We use this to replace messy if else conditions;
-Enums:
+Enums: We use enums rather than strings to make sure the variable names are standard;
 
 ------------ NEED TO CONTINUE FROM  -------------------
