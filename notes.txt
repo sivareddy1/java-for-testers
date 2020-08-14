@@ -63,4 +63,12 @@ Switches & Enums
 Switch: We use this to replace messy if else conditions;
 Enums: We use enums rather than strings to make sure the variable names are standard;
 
------------- NEED TO CONTINUE FROM  -------------------
+Java Collections:
+Arrays : denoted by adding VariableDataType[], max size need to be defined initially, this limitation can be mitigated by using lists;
+Lists : List<DataType> VariableName = new ArrayList<>(); Max Index is not defined, its grows dynamically, List can have duplicated values for variables, this limitation can be mitigated by using Sets;
+Sets : List<DataType> VariableName = new HashSet<>(); Max Index is not defined, its grows dynamically, Duplicate values are vomited, order is also ignored in Sets, prints randomly:
+
+Loops: for Loop : for(){}
+
+
+------------ NEED TO CONTINUE FROM JAVA COLLECTIONS (LiveCoding:Advanced Lists) -------------------
