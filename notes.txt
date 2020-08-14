@@ -71,4 +71,4 @@ Sets : List<DataType> VariableName = new HashSet<>(); Max Index is not defined, 
 Loops: for Loop : for(){}
 
 
------------- NEED TO CONTINUE FROM JAVA COLLECTIONS (LiveCoding:Advanced Lists) -------------------
+------------ NEED TO CONTINUE FROM JAVA COLLECTIONS (LiveCoding:Advanced Lists ) -------------------
