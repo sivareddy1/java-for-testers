@@ -70,5 +70,11 @@ Sets : List<DataType> VariableName = new HashSet<>(); Max Index is not defined, 
 
 Loops: for Loop : for(){}
 
+Java List API:
+ArrayList is most popular
+LinkedList less used
+Regular and Mostly Used (CollectionsAPI)List methods: add, remove, index of, sublist, size, clear, add all, remove all
 
------------- NEED TO CONTINUE FROM JAVA COLLECTIONS (LiveCoding:Advanced Lists ) -------------------
+
+
+------------ NEED TO CONTINUE FROM MAPS (Fisrt Video) -------------------

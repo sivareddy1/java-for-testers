@@ -1,6 +1,5 @@
 package com.serenitydojo;
 
-import com.serenitydojo.model.AnimalType;
 import com.serenitydojo.model.Feeder;
 import com.serenitydojo.model.FoodType;
 import org.junit.Assert;
