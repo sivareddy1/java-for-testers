@@ -85,6 +85,11 @@ ReplacingValues: Just update the value  using put method;(//replace does not cha
 Iterating over maps data (keys and values): using different methods - keySet & entrySet ;
 Removing elements from Map: by using methods remove & clear;
 
+Assertions:
+jUnit Assertions; Assert.assertEquals
+assertJ library assertions; Assertions.assertThat
+
+
 
 
 ------------ NEED TO CONTINUE FROM MAPS (Fisrt Video) -------------------
