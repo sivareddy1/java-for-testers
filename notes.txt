@@ -71,9 +71,19 @@ Sets : List<DataType> VariableName = new HashSet<>(); Max Index is not defined, 
 Loops: for Loop : for(){}
 
 Java List API:
-ArrayList is most popular
-LinkedList less used
-Regular and Mostly Used (CollectionsAPI)List methods: add, remove, index of, sublist, size, clear, add all, remove all
+ArrayList is most popular;
+LinkedList less used;
+Regular and Mostly Used (CollectionsAPI)List methods: add, remove, index of, sublist, size, clear, add all, remove all;
+
+Maps:
+Defined with Key and Value pair;
+Most common maps are HashMap and TreeMap;
+Regular and Mostly Used Map methods: put, get,putAll,getOrDefault, containsKey, containsValue,replace, keySet,entrySet,remove,clear
+creating maps using Map.of(), concise way of creating a map;
+DefaultValues: Map returns 'NULL' if the corresponding value for a key is not present (or even if a key is not present);
+ReplacingValues: Just update the value  using put method;(//replace does not change the map, unless the key is already present in the map);
+Iterating over maps data (keys and values): using different methods - keySet & entrySet ;
+Removing elements from Map: by using methods remove & clear;
 
 
 
