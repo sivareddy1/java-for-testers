@@ -89,7 +89,10 @@ Assertions:
 jUnit Assertions; Assert.assertEquals
 assertJ library assertions; Assertions.assertThat
 
+Interfaces:
+Common variables and methods defined in class (which is defined as an interface), all other classes those use these common methods implements this interface.
 
 
 
------------- NEED TO CONTINUE FROM MAPS (Fisrt Video) -------------------
+
+------------ COMPLETED JAVA FOR TESTERS MODULE -------------------
